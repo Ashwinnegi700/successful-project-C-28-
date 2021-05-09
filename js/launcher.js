@@ -12,7 +12,9 @@ constructor(body,point){
 fly(){
     this.launcher.bodyA=null
 }
-
+attach(body){
+    this.launcher.bodyA=body;
+}
    display(){
        if(this.launcher.bodyA){
         strokeWeight(4)
